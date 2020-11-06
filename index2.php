@@ -11,17 +11,17 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-6">
-            <img src="img/work/work1.jpg" style="width: 100%; height:100%;" class="img-fluid" />
+            <img src="img/work/work1.jpg" style="width: 100%; height:100%;" />
         </div>
         <div class="col-sm-3">
             <div class="col">
-                <img src="banner.jpg" style="width: 100%; height:33%;" class="img-fluid" />
-                <img src="office1.jpg" style="width: 100%; height:33%;" class="img-fluid" />
-                <img src="creative3.jpg" style="width: 100%; height:33%;" class="img-fluid" />
+                <img src="banner.jpg" style="width: 100%; height:33%;" />
+                <img src="office1.jpg" style="width: 100%; height:33%;" />
+                <img src="creative3.jpg" style="width: 100%; height:33%;" />
             </div>
         </div>
         <div class="col-sm-3">
-            <img src="life.jpg" style="width: 100%;height:66%;" class="img-fluid" />
-            <img src="work8.jpg" style="height:32%; width: 100%;" class="img-fluid" />
+            <img src="life.jpg" style="width: 100%;height:66%;" />
+            <img src="work8.jpg" style="height:32%; width: 100%;" />
         </div>
     </div>
