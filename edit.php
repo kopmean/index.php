@@ -9,17 +9,7 @@ $ID = $_GET['ID'];
 $row = mysqli_query($conn ,"Select * From guestbook where ID = $ID");
 $result = mysqli_fetch_assoc($row);
 
-if(isset($_POST['submit'])){
-	$ID = $_GET['ID'];
-	$Name=$_POST['name'];
-	$Comment=$_POST['comment'];
-	$Link=$_POST['link'];
-	
-	$sql = "UPDATE guestbook SET Name="$Name", Comment="$Comment", Link="$Link" WHERE ID='$ID'";
-	if(mysqli_query($conn, $sql)){
-		header("location:show.php");
-	}
-}
+
 ?>
 <!DOCTYPE html>
 <html>
