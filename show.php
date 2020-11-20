@@ -1,6 +1,9 @@
 <html>
 <head>
 <style>
+body {
+  background-image: url("cat.jpg");
+}
 .button {
   background-color: #4CAF50;
   border: none;
