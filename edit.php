@@ -21,7 +21,7 @@ $result = mysqli_fetch_assoc($row);
     Comment:<br>
     <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
     Link:<br>
-    <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
+    <input type="text" name = "link" id="idLink" value="<?=$result['Link']; ?>"> <br><br>
     <input type="submit" id="commentBtn">
   </form> 
 </body>
