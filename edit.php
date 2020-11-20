@@ -17,6 +17,9 @@ if(isset($_POST['submit'])){
 	
 	$sql = "UPDATE guestbook SET Name='$Name', Comment='$Comment', Link='$Link' WHERE ID='$ID'";
 	
+	if(mysqli_query($conn, $sql)){
+		header("location:show.php");
+	}
 }
 
 ?>
