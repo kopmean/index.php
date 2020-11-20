@@ -8,43 +8,28 @@
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
 <style>
 .button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #4CAF50; /* Green */
   border: none;
-  color: #FFFFFF;
+  color: white;
+  padding: 16px 32px;
   text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
+  text-decoration: none;
   display: inline-block;
-  position: relative;
-  transition: 0.5s;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
 }
 
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 </style>
 	<title>Comment Form</title>
@@ -57,7 +42,7 @@
     <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
     Link:<br>
     <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
-	  <span><input type="submit" class="button" style="vertical-align:middle" id="commentBtn"></span>
+<input type="submit" class="button button1" id="commentBtn">
   </form> 
 </body>
 </html>
