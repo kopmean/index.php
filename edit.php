@@ -17,7 +17,7 @@ $result = mysqli_fetch_assoc($row);
 <body>
   <form action = "" method = "post" id="CommentForm" >
     Name:<br>
-    <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
+    <input type="text" name = "name" id="idName" value="<?=$result['Name']; ?>"> <br>
     Comment:<br>
     <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
     Link:<br>
