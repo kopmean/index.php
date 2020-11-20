@@ -10,6 +10,7 @@ $row = mysqli_query($conn ,"Select * From guestbook where ID = $ID");
 $result = mysqli_fetch_assoc($row);
 
 if(isset($_POST['submit'])){
+	$ID = $_GET['ID'];
 	$Name=$_POST['name'];
 	$Comment=$_POST['comment'];
 	$Link=$_POST['link'];
