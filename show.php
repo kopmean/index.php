@@ -1,7 +1,7 @@
 <html>
 <head>
 <style>
-th {
+table.tr {
   background-color: white;
 table {
   background-color: lightblue;
