@@ -2,6 +2,9 @@
 <head>
 <style>
 table {
+  background-color: lightblue;
+}
+body {
   background-image: url("banner.jpg");
 }
 .button {
