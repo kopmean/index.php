@@ -6,7 +6,7 @@ if (mysqli_connect_errno($conn))
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 $ID = $_GET['ID'];
-$aaa = mysqli_query($conn ,"Select * From guestbook where ID = $ID");
+$aaa = mysqli_query($conn ,"Select * From guestbook where ID = "$ID"");
 $row = mysqli_fetch_assoc($aaa);
 
 if(isset($_POST['submit'])){
