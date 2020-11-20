@@ -1,7 +1,7 @@
 <html>
 <head>
 <style>
-body {
+table {
   background-image: url("banner.jpg");
 }
 .button {
