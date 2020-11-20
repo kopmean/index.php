@@ -19,7 +19,7 @@ $result = mysqli_fetch_assoc($row);
     Name:<br>
     <input type="text" name = "name" id="idName" value="<?=$result['Name']; ?>"> <br>
     Comment:<br>
-    <textarea rows="10" cols="20" name = "comment" id="idComment" value="<?=$result['Comment']; ?>"></textarea><br>  
+    <textarea rows="10" cols="20" name = "comment" id="idComment"><?php echo $row['Comment']; ?></textarea><br>  
     Link:<br>
     <input type="text" name = "link" id="idLink" value="<?=$result['Link']; ?>"> <br><br>
     <input type="submit" id="commentBtn">
