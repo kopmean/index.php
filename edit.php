@@ -7,6 +7,7 @@ if (mysqli_connect_errno($conn))
 }
 $ID = $_GET['ID'];
 $row = mysqli_query($conn ,"Select * From guestbook where ID = $ID");
+$result = mysqli_fetch_assoc($row);
 ?>
 <!DOCTYPE html>
 <html>
