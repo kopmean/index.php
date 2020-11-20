@@ -2,7 +2,7 @@
 <head>
 <style>
 body {
-  background-image: url("cat.jpg");
+  background-image: url("banner.jpg");
 }
 .button {
   background-color: #4CAF50;
