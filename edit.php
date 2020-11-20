@@ -15,7 +15,8 @@ if(isset($_POST['submit'])){
 	$Comment=$_POST['comment'];
 	$Link=$_POST['link'];
 	
-	$sql = "UPDATE guestbook SET Name="$Name", Comment="$Comment", Link="$Link" WHERE ID='$ID'";
+	$sql = "UPDATE guestbook SET Name='$Name', Comment='$Comment', Link='$Link' WHERE ID='$ID'";
+	
 }
 
 ?>
