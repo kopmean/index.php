@@ -1,8 +1,6 @@
 <html>
 <head>
 <style>
-table.tr {
-  background-color: white;
 table {
   background-color: lightblue;
 }
