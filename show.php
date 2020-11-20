@@ -8,7 +8,6 @@ table {
 }
 body {
   background-image: url("banner.jpg");
-  opacity: 0.6;
 }
 .button {
   background-color: #4CAF50;
