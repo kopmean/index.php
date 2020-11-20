@@ -8,6 +8,17 @@ if (mysqli_connect_errno($conn))
 $ID = $_GET['ID'];
 $row = mysqli_query($conn ,"Select * From guestbook where ID = $ID");
 $result = mysqli_fetch_assoc($row);
+
+if(isset($_POST['submit'])){
+	$Name=$_POST['name'];
+	$Comment=$_POST['comment'];
+	$Link=$_POST['link'];
+	
+	$sql = "UPDATE guestbook SET Name="$Name", Comment="$Comment", Link="$Link" WHERE ID='$ID'";
+	if(mysqli_query($conn, $sql)){
+		header("location:show.php");
+	}
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,7 +33,7 @@ $result = mysqli_fetch_assoc($row);
     <textarea rows="10" cols="20" name = "comment" id="idComment"><?php echo $result['Comment']; ?></textarea><br>  
     Link:<br>
     <input type="text" name = "link" id="idLink" value="<?=$result['Link']; ?>"> <br><br>
-    <input type="submit" id="commentBtn">
+    <input type="submit" name="submit" id="commentBtn">
   </form> 
 </body>
 </html>
