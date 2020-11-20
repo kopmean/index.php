@@ -1,11 +1,14 @@
 <html>
 <head>
 <style>
+th {
+  background-color: white;
 table {
   background-color: lightblue;
 }
 body {
   background-image: url("banner.jpg");
+  opacity: 0.6;
 }
 .button {
   background-color: #4CAF50;
