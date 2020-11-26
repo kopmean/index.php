@@ -31,7 +31,8 @@ body {
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'itf63.mysql.database.azure.com', 'kopsira@itf63', 'GQFvju56', 'itflab', 3306);
-if (mysqli_connect_errno($conn))
+if (mysqli_query($conn, $sql)) {
+    header("location:show.php");
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
