@@ -18,7 +18,7 @@ $sql = "INSERT INTO bmi (name , weight , height , bmi) VALUES ('$name', '$weight
 
 
 if (mysqli_query($conn, $sql)) {
-    header("location:show.php");
+    header("location:fshow.php");
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
