@@ -14,7 +14,7 @@ $height = $_GET['height'];
 $bmi = $weight/$height
 
 
-$sql = "INSERT INTO bmi(name , weight , height , bmi) VALUES ('$name', '$weight', '$height', '$bmi')";
+$sql = "INSERT INTO bmi (name , weight , height , bmi) VALUES ('$name', '$weight', '$height', '$bmi')";
 
 
 if (mysqli_query($conn, $sql)) {
