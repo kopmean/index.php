@@ -43,7 +43,6 @@ $res = mysqli_query($conn, 'SELECT * FROM bmi');
     <th width="100"> <div align="center">น้ำหนัก </div></th>
     <th width="100"> <div align="center">ส่วนสูง </div></th>
     <th width="100"> <div align="center">bmi </div></th>
-    <button class="btn btn-primary" type="submit">Button</button>
   </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
@@ -54,6 +53,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['weight'];?></td>
     <td><?php echo $Result['height'];?></td>
     <td><?php echo $Result['bmi'];?></td>
+    <button class="btn btn-primary" type="submit">Button</button>
   </tr>
 <?php
 }
